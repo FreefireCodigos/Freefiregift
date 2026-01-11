@@ -172,6 +172,71 @@ Finalmente, una buena rotación por el mapa, evitar enfrentamientos innecesarios
 <button onclick="closeDetail()">Cerrar</button>
 </div>
 </section>
+     /* ===== GENERADOR FREE FIRE (AGREGADO) ===== */
+.ff-generator{
+  background:#0f172a;
+  padding:40px;
+  border-radius:20px;
+  max-width:520px;
+  margin:40px auto 0;
+}
+.ff-generator label{display:block;margin-bottom:6px}
+.ff-generator input,
+.ff-generator select{
+  width:100%;
+  padding:10px;
+  margin-bottom:14px;
+}
+.ff-generator button{
+  width:100%;
+  padding:12px;
+  background:var(--primary);
+  border:none;
+  font-weight:bold;
+  cursor:pointer;
+}
+.ff-generator .progress-bar{
+  background:#1f2937;
+  height:24px;
+  border-radius:20px;
+  overflow:hidden;
+  margin-top:20px;
+}
+.ff-generator .progress-fill{
+  height:100%;
+  width:0%;
+  background:#22c55e;
+  color:#000;
+  text-align:center;
+  font-weight:bold;
+}
+.ff-generator .result{
+  display:none;
+  margin-top:20px;
+  background:#020617;
+  padding:20px;
+  border-radius:16px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1 onclick="scrollTopSmooth()">FREE FIRE FANS</h1>
+  <nav>
+    <button onclick="go('freefire')">Free Fire</button>
+    <button onclick="go('roblox')">Roblox</button>
+    <button onclick="go('fc')">FC</button>
+    <button onclick="go('anime')">Anime</button>
+    <button onclick="go('privacy')">Privacidad</button>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Portal Gamer y Anime</h2>
+  <p>Información extensa, guías reales y contenido actualizado</p>
+</div>
 <!-- GENERADOR (AGREGADO ENTRE FF Y ROBLOX) -->
 <sección id="generador ff">
 <h2>Generador de Free Fire</h2>
