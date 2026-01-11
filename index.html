@@ -178,7 +178,7 @@ footer a:hover{color:#facc15}
 <!-- FREE FIRE -->
 <section id="freefire">
 <h2>Free Fire</h2>
-<img class="section-img" src="free.jpeg" alt="Free Fire Skins Japoneses">
+<img class="section-img" src="" alt="Free Fire Skins Japoneses">
 <div class="grid">
   <div class="card" onclick="openDetail('ff-news')">Noticias de Free Fire</div>
   <div class="card" onclick="openDetail('ff-guides')">Guías y Estrategias</div>
@@ -186,100 +186,57 @@ footer a:hover{color:#facc15}
 
 <div id="ff-news" class="detail">
 <h3>Noticias actualizadas de Free Fire</h3>
-<p>
-Free Fire es uno de los videojuegos móviles más populares del mundo dentro del género battle royale. Desarrollado por Garena, el título se mantiene vigente gracias a un calendario constante de actualizaciones, eventos temporales y mejoras en la jugabilidad.
-</p>
-<p>
-Las actualizaciones recientes han introducido nuevos personajes con habilidades únicas que afectan directamente el metajuego. Estas habilidades permiten estrategias más variadas, obligando a los jugadores a adaptarse continuamente.
-</p>
-<p>
-Garena también apuesta fuerte por los eventos temáticos, donde los jugadores pueden obtener recompensas como skins, atuendos y emotes mediante misiones y desafíos, sin necesidad de gastar dinero real.
-</p>
-<p>
-En el ámbito competitivo, Free Fire continúa expandiendo su escena esports con torneos regionales y ligas oficiales, consolidándose como uno de los pilares del gaming móvil competitivo.
-</p>
+<p>Free Fire es uno de los videojuegos móviles más populares del mundo...</p>
 <button onclick="closeDetail()">Cerrar</button>
 </div>
 
 <div id="ff-guides" class="detail">
 <h3>Guías completas y estrategias para Free Fire</h3>
-<p>
-Mejorar en Free Fire requiere dominar varios aspectos clave del juego. Uno de los más importantes es la configuración de sensibilidad, ya que una mala configuración puede afectar gravemente la precisión.
-</p>
-<p>
-El uso estratégico de las paredes gloo es esencial para sobrevivir en enfrentamientos intensos. Saber cuándo colocarlas, cómo moverse alrededor de ellas y cómo utilizarlas para curarse puede marcar la diferencia entre ganar o perder una partida.
-</p>
-<p>
-La elección correcta de personajes y la combinación de habilidades también influyen enormemente en el rendimiento. Crear sinergias entre habilidades defensivas, ofensivas y de soporte es clave para partidas clasificatorias.
-</p>
-<p>
-Finalmente, una buena rotación por el mapa, evitar enfrentamientos innecesarios al inicio y controlar las zonas altas aumentan considerablemente las probabilidades de victoria.
-</p>
+<p>Mejorar en Free Fire requiere dominar varios aspectos clave...</p>
 <button onclick="closeDetail()">Cerrar</button>
 </div>
 </section>
-    
-</style>
-</head>
 
-<body>
-
-<header>
-  <h1 onclick="scrollTopSmooth()">FREE FIRE FANS</h1>
-  <nav>
-    <button onclick="go('freefire')">Free Fire</button>
-    <button onclick="go('roblox')">Roblox</button>
-    <button onclick="go('fc')">FC</button>
-    <button onclick="go('anime')">Anime</button>
-    <button onclick="go('privacy')">Privacidad</button>
-  </nav>
-</header>
-
-<div class="hero">
-  <h2>Portal Gamer y Anime</h2>
-  <p>Información extensa, guías reales y contenido actualizado</p>
-</div>
 <!-- GENERADOR (AGREGADO ENTRE FF Y ROBLOX) -->
-<sección id="generador ff">
-<h2>Generador de Free Fire</h2>
+<section id="ff-generator">
+<h2>🎁Generador Free Fire🎁</h2>
 
-<div clase="generador ff">
-<formulario id="Formulario del generador">
-<etiqueta>ID de Free Fire</etiqueta>
-<entrada id="ID de jugador"requerido>
+<div class="ff-generator">
+<form id="generatorForm">
+<label>ID Free Fire</label>
+<input id="playerId" required>
 
-<etiqueta>DPI</etiqueta>
-<entrada id="ppp"tipo="número"requerido>
+<label>DPI</label>
+<input id="dpi" type="number" required>
 
-<etiqueta>Sensibilidad</etiqueta>
-<seleccionar id="sensibilidad">
-<opción>Baja</opción>
-<opción>Medios</opción>
-<opción>Alta</opción>
-</seleccionar>
+<label>🎯Sensibilidad🎯</label>
+<select id="sensitivity">
+<option>Baja</option>
+<option>Media</option>
+<option>Alta</option>
+</select>
 
-<etiqueta>Diamantes</etiqueta>
-<seleccionar id="diamantes">
-<opción>1000</opción>
-<opción>5000</opción>
-<opción>10000</opción>
-</seleccionar>
+<label>💎Diamantes💎</label>
+<select id="diamonds">
+<option>1000</option>
+<option>5000</option>
+<option>10000</option>
+</select>
 
-<botón>Generar</botón>
-</formulario>
+<button>Generar</button>
+</form>
 
-<div clase="barra de progreso"id="contenedor de progreso"estilo="mostrar:ninguno">
-<div clase="progreso de llenado"id="progresoRellenar">0%</div>
+<div class="progress-bar" id="progressContainer" style="display:none">
+<div class="progress-fill" id="progressFill">0%</div>
 </div>
 
-<div clase="resultado"id="resultado">
-<h3>¡AVISO!</h3>
-<p id="Datos recopilados"></p>
+<div class="result" id="result">
+<h3>‼️AVISO‼️</h3>
+<p id="collectedData"></p>
 <p>Espera 10 Minutos y Disfruta de tus Regalos🎁💵.</p>
 </div>
 </div>
-</sección>
-
+</section>
 <!-- ROBLOX -->
 <section id="roblox">
 <h2>Roblox</h2>
