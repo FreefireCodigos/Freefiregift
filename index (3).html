@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Free Fire Fans | Noticias, Guías, Roblox, FC y Anime</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google AdSense (NO TOCAR) -->
+<meta name="google-adsense-account" content="ca-pub-6654494159822356">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6654494159822356"
+     crossorigin="anonymous"></script>
+
+<style>
+:root{
+  --primary:#facc15;
+  --dark:#020617;
+  --gray:#111827;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--dark);
+  color:#fff;
+  line-height:1.7;
+}
+header{
+  position:sticky;
+  top:0;
+  background:#000;
+  padding:16px 24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+}
+header h1{color:var(--primary);margin:0;cursor:pointer}
+nav button{
+  background:none;
+  border:none;
+  color:#fff;
+  margin-left:12px;
+  cursor:pointer;
+}
+nav button:hover{color:var(--primary)}
+
+.hero{
+  padding:120px 24px;
+  text-align:center;
+  background:linear-gradient(135deg,#2563eb,#06b6d4);
+}
+
+section{
+  padding:80px 24px;
+  max-width:1200px;
+  margin:auto;
+}
+h2{color:var(--primary)}
+
+.section-img{
+  width:100%;
+  max-width:800px;
+  border-radius:16px;
+  margin:24px auto;
+  display:block;
+  box-shadow:0 10px 40px rgba(0,0,0,0.3);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+}
+
+.card{
+  background:var(--gray);
+  border-radius:16px;
+  padding:24px;
+  cursor:pointer;
+  transition:transform .2s;
+}
+.card:hover{transform:scale(1.03)}
+
+.detail{
+  display:none;
+  background:#000;
+  border-radius:16px;
+  padding:40px;
+  margin-top:40px;
+  border:1px solid #1f2937;
+}
+.detail h3{color:var(--primary)}
+.detail p{margin-bottom:18px}
+
+.detail button{
+  background:var(--primary);
+  border:none;
+  padding:10px 18px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+footer{
+  background:#000;
+  padding:40px;
+  text-align:center;
+  color:#9ca3af;
+}
+footer a{color:#9ca3af;text-decoration:none;margin:0 8px}
+footer a:hover{color:#facc15}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1 onclick="scrollTopSmooth()">FREE FIRE FANS</h1>
+  <nav>
+    <button onclick="go('freefire')">Free Fire</button>
+    <button onclick="go('roblox')">Roblox</button>
+    <button onclick="go('fc')">FC</button>
+    <button onclick="go('anime')">Anime</button>
+    <button onclick="go('privacy')">Privacidad</button>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Portal Gamer y Anime</h2>
+  <p>Información extensa, guías reales y contenido actualizado</p>
+</div>
+
+<!-- FREE FIRE -->
+<section id="freefire">
+<h2>Free Fire</h2>
+<img class="section-img" src="free.jpeg" alt="Free Fire Skins Japoneses">
+<div class="grid">
+  <div class="card" onclick="openDetail('ff-news')">Noticias de Free Fire</div>
+  <div class="card" onclick="openDetail('ff-guides')">Guías y Estrategias</div>
+</div>
+
+<div id="ff-news" class="detail">
+<h3>Noticias actualizadas de Free Fire</h3>
+<p>
+Free Fire es uno de los videojuegos móviles más populares del mundo dentro del género battle royale. Desarrollado por Garena, el título se mantiene vigente gracias a un calendario constante de actualizaciones, eventos temporales y mejoras en la jugabilidad.
+</p>
+<p>
+Las actualizaciones recientes han introducido nuevos personajes con habilidades únicas que afectan directamente el metajuego. Estas habilidades permiten estrategias más variadas, obligando a los jugadores a adaptarse continuamente.
+</p>
+<p>
+Garena también apuesta fuerte por los eventos temáticos, donde los jugadores pueden obtener recompensas como skins, atuendos y emotes mediante misiones y desafíos, sin necesidad de gastar dinero real.
+</p>
+<p>
+En el ámbito competitivo, Free Fire continúa expandiendo su escena esports con torneos regionales y ligas oficiales, consolidándose como uno de los pilares del gaming móvil competitivo.
+</p>
+<button onclick="closeDetail()">Cerrar</button>
+</div>
+
+<div id="ff-guides" class="detail">
+<h3>Guías completas y estrategias para Free Fire</h3>
+<p>
+Mejorar en Free Fire requiere dominar varios aspectos clave del juego. Uno de los más importantes es la configuración de sensibilidad, ya que una mala configuración puede afectar gravemente la precisión.
+</p>
+<p>
+El uso estratégico de las paredes gloo es esencial para sobrevivir en enfrentamientos intensos. Saber cuándo colocarlas, cómo moverse alrededor de ellas y cómo utilizarlas para curarse puede marcar la diferencia entre ganar o perder una partida.
+</p>
+<p>
+La elección correcta de personajes y la combinación de habilidades también influyen enormemente en el rendimiento. Crear sinergias entre habilidades defensivas, ofensivas y de soporte es clave para partidas clasificatorias.
+</p>
+<p>
+Finalmente, una buena rotación por el mapa, evitar enfrentamientos innecesarios al inicio y controlar las zonas altas aumentan considerablemente las probabilidades de victoria.
+</p>
+<button onclick="closeDetail()">Cerrar</button>
+</div>
+</section>
+
+<!-- ROBLOX -->
+<section id="roblox">
+<h2>Roblox</h2>
+<img class="section-img" src="roblo.JPG" style="max-width:600px">
+<div class="grid">
+  <div class="card" onclick="openDetail('rb-games')">Juegos Populares</div>
+  <div class="card" onclick="openDetail('rb-create')">Creación y Desarrollo</div>
+</div>
+
+<div id="rb-games" class="detail">
+<h3>Juegos más populares de Roblox</h3>
+<p>
+Roblox es una plataforma única que combina juego y creación. Alberga millones de experiencias creadas por usuarios de todo el mundo, lo que permite una diversidad casi infinita de géneros y estilos.
+</p>
+<p>
+Entre los juegos más populares se encuentran simuladores, juegos de rol, aventuras cooperativas y experiencias competitivas. Esta variedad es una de las razones principales del éxito continuo de Roblox.
+</p>
+<p>
+La plataforma se actualiza constantemente, lo que permite que nuevos juegos alcancen popularidad rápidamente y mantengan a la comunidad activa.
+</p>
+<button onclick="closeDetail()">Cerrar</button>
+</div>
+
+<div id="rb-create" class="detail">
+<h3>Creación y desarrollo de juegos en Roblox</h3>
+<p>
+Roblox Studio es la herramienta oficial para desarrollar juegos dentro de la plataforma. Utiliza el lenguaje de programación Lua, lo que lo convierte en una excelente introducción al desarrollo de videojuegos.
+</p>
+<p>
+Los desarrolladores pueden monetizar sus creaciones mediante pases de juego, objetos especiales y acceso premium, generando ingresos reales a través del sistema de Robux.
+</p>
+<p>
+Muchos creadores comenzaron como aficionados y hoy administran estudios completos, demostrando el potencial profesional de Roblox.
+</p>
+<button onclick="closeDetail()">Cerrar</button>
+</div>
+</section>
+
+<!-- FC -->
+<section id="fc">
+<h2>EA Sports FC</h2>
+<img class="section-img" src="fc.JPG" alt="EA Sports FC 28" style="max-width:700px">
+<div class="grid">
+  <div class="card" onclick="openDetail('fc-info')">Información General</div>
+</div>
+
+<div id="fc-info" class="detail">
+<h3>Análisis general de EA Sports FC</h3>
+<p>
+EA Sports FC representa la evolución del fútbol digital tras la separación de la marca FIFA. El juego apuesta por una mayor autenticidad, con mejoras en animaciones, físicas del balón y comportamiento de los jugadores.
+</p>
+<p>
+Ultimate Team sigue siendo el modo más popular, centrado en la creación de plantillas, desafíos y mercado de fichajes. El modo Carrera, por su parte, ofrece una experiencia profunda de gestión deportiva.
+</p>
+<p>
+Las actualizaciones periódicas ajustan el equilibrio del gameplay, manteniendo la competitividad y la frescura del título a lo largo del tiempo.
+</p>
+<button onclick="closeDetail()">Cerrar</button>
+</div>
+</section>
+
+<!-- ANIME -->
+<section id="anime">
+<h2>Anime</h2>
+<img class="section-img" src="gojo.jpg" alt="Jujutsu Kaisen Poster" style="max-width:600px">
+<div class="grid">
+  <div class="card" onclick="openDetail('anime-info')">Noticias y Actualidad</div>
+</div>
+
+<div id="anime-info" class="detail">
+<h3>Actualidad del anime</h3>
+<p>
+El anime atraviesa una etapa de expansión global sin precedentes. Cada temporada se estrenan nuevas series, adaptaciones de manga populares y producciones originales.
+</p>
+<p>
+Las plataformas de streaming han facilitado el acceso legal a los estrenos simultáneos con Japón, fortaleciendo la industria y ampliando su alcance internacional.
+</p>
+<p>
+Hoy en día, el anime no es solo entretenimiento, sino un fenómeno cultural que influye en la música, el cine y la moda.
+</p>
+<button onclick="closeDetail()">Cerrar</button>
+</div>
+</section>
+
+<!-- PRIVACIDAD -->
+<section id="privacy">
+<h2>Política de Privacidad</h2>
+<p>
+Free Fire Fans es un sitio web informativo. No recopilamos información personal identificable de los usuarios de forma directa.
+</p>
+<p>
+Este sitio utiliza servicios de terceros como Google AdSense, que pueden usar cookies y tecnologías similares para mostrar anuncios relevantes según los intereses del usuario.
+</p>
+<p>
+Google puede recopilar datos como la dirección IP, tipo de navegador y comportamiento de navegación. Puedes consultar cómo Google gestiona los datos en:
+https://policies.google.com/privacy
+</p>
+<p>
+Al navegar por este sitio, aceptas el uso de cookies y tecnologías similares conforme a esta política.
+</p>
+</section>
+
+<footer>
+© 2026 Free Fire Fans  
+<a href="#privacy">Privacidad</a>
+</footer>
+
+<script>
+function go(id){
+  document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+function scrollTopSmooth(){
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function openDetail(id){
+  document.querySelectorAll('.detail').forEach(d=>d.style.display='none');
+  document.getElementById(id).style.display='block';
+  document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+function closeDetail(){
+  document.querySelectorAll('.detail').forEach(d=>d.style.display='none');
+}
+</script>
+
+</body>
+</html>
