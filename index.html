@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Free Fire Fans | Noticias, Guías y Anime</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google AdSense -->
+<meta name="google-adsense-account" content="ca-pub-6654494159822356">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6654494159822356"
+     crossorigin="anonymous"></script>
+
+<style>
+:root{
+  --primary:#facc15;
+  --dark:#020617;
+  --gray:#111827;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--dark);
+  color:#fff;
+  line-height:1.6;
+}
+header{
+  position:sticky;
+  top:0;
+  background:#000;
+  padding:16px 24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+}
+header h1{color:var(--primary);margin:0;cursor:pointer}
+nav button{
+  background:none;border:none;color:#fff;
+  margin-left:12px;cursor:pointer;
+}
+nav button:hover{color:var(--primary)}
+
+.hero{
+  padding:120px 24px;
+  text-align:center;
+  background:linear-gradient(135deg,#2563eb,#06b6d4);
+}
+
+section{padding:80px 24px;max-width:1200px;margin:auto}
+h2{color:var(--primary)}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+}
+
+.card{
+  background:var(--gray);
+  border-radius:16px;
+  overflow:hidden;
+  cursor:pointer;
+  transition:transform .2s;
+}
+.card:hover{transform:scale(1.03)}
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+.card div{padding:16px}
+
+.detail{
+  display:none;
+  background:#000;
+  border-radius:16px;
+  padding:32px;
+  margin-top:40px;
+}
+.detail h3{color:var(--primary)}
+.detail button{
+  margin-top:20px;
+  background:var(--primary);
+  border:none;
+  padding:10px 16px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+footer{
+  background:#000;
+  padding:40px;
+  text-align:center;
+  color:#9ca3af;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1 onclick="scrollTopSmooth()">FREE FIRE FANS</h1>
+  <nav>
+    <button onclick="go('freefire')">Free Fire</button>
+    <button onclick="go('roblox')">Roblox</button>
+    <button onclick="go('fc26')">FC26</button>
+    <button onclick="go('anime')">Anime</button>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Portal Gamer y Anime</h2>
+  <p>Noticias reales, guías completas y análisis actualizados</p>
+</div>
+
+<!-- FREE FIRE -->
+<section id="freefire">
+<h2>Free Fire</h2>
+<div class="grid">
+  <div class="card" onclick="openDetail('ff-news')">
+    <img src="https://images.unsplash.com/photo-1611605698335-7cdd5b93b2b3?auto=format&fit=crop&w=1200&q=80">
+    <div><h3>Noticias de Free Fire</h3></div>
+  </div>
+
+  <div class="card" onclick="openDetail('ff-guides')">
+    <img src="https://images.unsplash.com/photo-1598550480605-7c69cbd9e4c4?auto=format&fit=crop&w=1200&q=80">
+    <div><h3>Guías y Consejos</h3></div>
+  </div>
+</div>
+
+<div id="ff-news" class="detail">
+<h3>Noticias actuales de Free Fire</h3>
+<p>
+Free Fire continúa siendo uno de los battle royale móviles más jugados del mundo. Garena mantiene el juego vivo mediante eventos semanales, colaboraciones especiales y actualizaciones constantes que introducen nuevos personajes, habilidades y modos de juego.
+</p>
+<p>
+En las últimas temporadas se han incorporado mejoras al sistema de clasificatorias, ajustes de balance en armas populares y eventos temáticos que permiten a los jugadores obtener skins, diamantes y recompensas exclusivas sin costo.
+</p>
+<p>
+Además, Free Fire apuesta cada vez más por el competitivo, fortaleciendo torneos regionales y ligas oficiales que permiten a jugadores amateurs aspirar al escenario profesional.
+</p>
+<button onclick="closeDetail()">Cerrar</button>
+</div>
+
+<div id="ff-guides" class="detail">
+<h3>Guías completas de Free Fire</h3>
+<p>
+Mejorar en Free Fire no depende solo de reflejos, sino de estrategia. Ajustar correctamente la sensibilidad, conocer el retroceso de las armas y elegir personajes compatibles con tu estilo de juego marca la diferencia.
+</p>
+<p>
+Entre los consejos más importantes destacan: dominar el uso de paredes gloo, aprender a rotar correctamente en mapas como Bermuda y Kalahari, y aprovechar las habilidades activas en el momento adecuado.
+</p>
+<p>
+También es clave administrar el oro y los recursos durante la partida, priorizando armas equilibradas y evitando enfrentamientos innecesarios en los primeros minutos.
+</p>
+<button onclick="closeDetail()">Cerrar</button>
+</div>
+</section>
+
+<!-- ROBLOX -->
+<section id="roblox">
+<h2>Roblox</h2>
+<div class="grid">
+  <div class="card" onclick="openDetail('rb-games')">
+    <img src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?auto=format&fit=crop&w=1200&q=80">
+    <div><h3>Juegos Populares</h3></div>
+  </div>
+  <div class="card" onclick="openDetail('rb-create')">
+    <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1200&q=80">
+    <div><h3>Creación y Desarrollo</h3></div>
+  </div>
+</div>
+
+<div id="rb-games" class="detail">
+<h3>Juegos más jugados de Roblox</h3>
+<p>
+Roblox es una plataforma en constante crecimiento donde destacan juegos como simuladores, aventuras RPG y experiencias competitivas. Cada semana surgen nuevos títulos creados por la comunidad.
+</p>
+<p>
+La variedad de géneros permite que jugadores de todas las edades encuentren experiencias adaptadas a sus gustos, desde juegos casuales hasta proyectos complejos con economías internas.
+</p>
+<button onclick="closeDetail()">Cerrar</button>
+</div>
+
+<div id="rb-create" class="detail">
+<h3>Crear juegos en Roblox</h3>
+<p>
+Roblox Studio permite a cualquier usuario crear su propio juego desde cero. Con scripting en Lua, diseño de mapas y monetización mediante Robux, muchos desarrolladores generan ingresos reales.
+</p>
+<p>
+Aprender a crear juegos en Roblox abre puertas al desarrollo de videojuegos y fomenta habilidades técnicas desde edades tempranas.
+</p>
+<button onclick="closeDetail()">Cerrar</button>
+</div>
+</section>
+
+<!-- FC26 -->
+<section id="fc26">
+<h2>EA Sports FC 26</h2>
+<div class="grid">
+  <div class="card" onclick="openDetail('fc-info')">
+    <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1200&q=80">
+    <div><h3>Modos de Juego</h3></div>
+  </div>
+</div>
+
+<div id="fc-info" class="detail">
+<h3>Todo sobre EA Sports FC 26</h3>
+<p>
+FC 26 continúa la evolución del fútbol digital con mejoras en animaciones, inteligencia artificial y realismo en el campo. Ultimate Team sigue siendo el modo más popular.
+</p>
+<p>
+El modo Carrera ha recibido ajustes que mejoran la gestión de clubes y el desarrollo de jugadores, ofreciendo una experiencia más profunda para los fans del fútbol.
+</p>
+<button onclick="closeDetail()">Cerrar</button>
+</div>
+</section>
+
+<!-- ANIME -->
+<section id="anime">
+<h2>Anime</h2>
+<div class="grid">
+  <div class="card" onclick="openDetail('anime-info')">
+    <img src="https://images.unsplash.com/photo-1541560052-5e137f229371?auto=format&fit=crop&w=1200&q=80">
+    <div><h3>Noticias y Estrenos</h3></div>
+  </div>
+</div>
+
+<div id="anime-info" class="detail">
+<h3>Actualidad del anime</h3>
+<p>
+El anime vive uno de sus mejores momentos, con estrenos constantes cada temporada. Estudios japoneses continúan adaptando mangas populares y produciendo series originales.
+</p>
+<p>
+Plataformas de streaming han facilitado el acceso legal a cientos de títulos, permitiendo a los fans seguir estrenos simultáneos con Japón.
+</p>
+<button onclick="closeDetail()">Cerrar</button>
+</div>
+</section>
+
+<footer>
+© 2026 Free Fire Fans — Sitio informativo
+</footer>
+
+<script>
+function go(id){
+  document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+function scrollTopSmooth(){
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function openDetail(id){
+  document.querySelectorAll('.detail').forEach(d=>d.style.display='none');
+  const el=document.getElementById(id);
+  el.style.display='block';
+  el.scrollIntoView({behavior:'smooth'});
+}
+function closeDetail(){
+  document.querySelectorAll('.detail').forEach(d=>d.style.display='none');
+}
+</script>
+
+</body>
+</html>
