@@ -6,72 +6,81 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+/* ===== VARIABLES DEL INDEX ===== */
 :root{
   --primary:#facc15;
   --dark:#020617;
   --gray:#111827;
 }
 
-/* ===== BODY BLANCO ===== */
-body{
-  margin:0;
-  font-family:Arial,Helvetica,sans-serif;
-  background:#ffffff;
-  color:#111;
-  line-height:1.8;
-}
+*{box-sizing:border-box}
 
-/* ===== HEADER OSCURO ===== */
+/* ===== HEADER ORIGINAL DEL INDEX ===== */
 header{
+  position:sticky;
+  top:0;
   background:#000;
   padding:16px 24px;
   display:flex;
   justify-content:space-between;
   align-items:center;
+  z-index:1000;
 }
 header h1{
   color:var(--primary);
   margin:0;
   cursor:pointer;
 }
-nav a{
+nav button{
+  background:none;
+  border:none;
   color:#fff;
-  text-decoration:none;
-  margin-left:14px;
+  margin-left:12px;
+  cursor:pointer;
+  font-size:16px;
 }
-nav a:hover{color:var(--primary)}
+nav button:hover{color:var(--primary)}
+
+/* ===== CUERPO BLANCO (COMO ARMAS EVO) ===== */
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#ffffff;
+  color:#111;
+  line-height:1.8;
+}
 
 /* ===== CONTENIDO ===== */
-section{
-  max-width:1000px;
-  margin:auto;
-  padding:60px 24px;
+main{
+  max-width:900px;
+  margin:70px auto;
+  padding:0 20px;
 }
 h2{
-  color:#111;
-  text-align:center;
+  font-size:38px;
   margin-bottom:40px;
-  font-size:32px;
 }
-
-/* ===== SUBTÍTULOS CON COLOR CAMBIANTE ===== */
 h3{
-  font-size:22px;
-  animation: colorChange 4s infinite alternate;
+  font-size:24px;
+  margin-top:50px;
+  animation: cambioColor 6s infinite;
 }
 
-@keyframes colorChange{
-  0%{color:#facc15;}
-  50%{color:#22c55e;}
-  100%{color:#2563eb;}
+/* COLORES CAMBIANTES */
+@keyframes cambioColor{
+  0%{color:#22c55e;}
+  33%{color:#3b82f6;}
+  66%{color:#eab308;}
+  100%{color:#22c55e;}
 }
 
-/* ===== FOOTER OSCURO ===== */
+/* ===== FOOTER ORIGINAL ===== */
 footer{
   background:#000;
   padding:40px;
   text-align:center;
   color:#9ca3af;
+  margin-top:80px;
 }
 footer a{
   color:#9ca3af;
@@ -84,68 +93,89 @@ footer a:hover{color:#facc15}
 
 <body>
 
+<!-- ===== HEADER (EL MISMO DEL INDEX) ===== -->
 <header>
   <h1 onclick="location.href='index.html'">FREE FIRE FANS</h1>
   <nav>
-    <a href="armas-evolutivas.html">Armas Evo</a>
-    <a href="personajes-free-fire.html">Personajes</a>
+    <button onclick="location.href='index.html#freefire'">Free Fire</button>
+    <button onclick="location.href='index.html#roblox'">Roblox</button>
+    <button onclick="location.href='index.html#fc'">FC</button>
+    <button onclick="location.href='index.html#anime'">Anime</button>
   </nav>
 </header>
 
-<section>
+<!-- ===== CONTENIDO ===== -->
+<main>
 
 <h2>Personajes de Free Fire</h2>
 
 <h3>¿Qué son los personajes en Free Fire?</h3>
 <p>
-Los personajes en Free Fire representan uno de los pilares más importantes del juego, ya que cada uno cuenta con habilidades únicas que influyen directamente en la forma de jugar.
-Estas habilidades permiten mejorar el ataque, la defensa, la curación o la movilidad del jugador dentro de la partida.
-Elegir el personaje correcto puede marcar una gran diferencia en enfrentamientos directos y partidas clasificatorias.
-Además, el sistema de habilidades hace que cada partida sea diferente.
+Los personajes en Free Fire representan uno de los elementos más importantes del juego, ya que cada uno cuenta con habilidades únicas que influyen directamente en la forma de jugar. A diferencia de otros battle royale, Free Fire apuesta por un sistema donde la estrategia no depende solo de las armas, sino también de las capacidades especiales de cada personaje.
+</p>
+<p>
+Estas habilidades permiten mejorar aspectos como el daño, la velocidad, la resistencia o la recuperación de vida, lo que hace que cada jugador pueda adaptar su estilo de juego según sus preferencias. Por esta razón, los personajes no son solo elementos visuales, sino piezas clave para ganar partidas.
+</p>
+<p>
+Garena implementó este sistema para fomentar la diversidad de estrategias y mantener el juego dinámico, evitando que todas las partidas se sientan iguales.
 </p>
 
-<h3>Personajes ofensivos</h3>
+<h3>Tipos de habilidades disponibles</h3>
 <p>
-Los personajes ofensivos están diseñados para jugadores agresivos que buscan eliminar enemigos rápidamente.
-Sus habilidades suelen aumentar el daño, la precisión o la velocidad de disparo.
-Son ideales para quienes prefieren un estilo de juego directo y arriesgado.
-En manos expertas, estos personajes pueden dominar completamente una partida.
+Las habilidades de los personajes se dividen principalmente en activas y pasivas. Las habilidades activas deben ser activadas manualmente durante la partida y suelen tener un tiempo de reutilización, lo que obliga al jugador a usarlas de manera estratégica.
+</p>
+<p>
+Por otro lado, las habilidades pasivas funcionan automáticamente y ofrecen beneficios constantes, como reducción de daño, aumento de velocidad o mejoras en la precisión.
+</p>
+<p>
+Entender estas diferencias es fundamental para aprovechar al máximo el potencial de cada personaje.
 </p>
 
-<h3>Personajes defensivos</h3>
+<h3>Influencia del personaje en el estilo de juego</h3>
 <p>
-Los personajes defensivos se enfocan en la supervivencia y la resistencia.
-Permiten reducir el daño recibido, regenerar vida o mejorar la protección.
-Son ideales para partidas largas y estrategias más cuidadosas.
-Muchos jugadores los prefieren en modos clasificatorios.
+Elegir el personaje correcto puede cambiar completamente la forma en que se desarrolla una partida. Los jugadores agresivos suelen optar por personajes ofensivos, mientras que los jugadores más tácticos prefieren personajes defensivos o de soporte.
+</p>
+<p>
+En partidas clasificatorias, esta decisión se vuelve aún más importante, ya que una mala elección puede afectar el rendimiento de todo el equipo.
+</p>
+<p>
+Por esta razón, los jugadores experimentados suelen dominar varios personajes.
 </p>
 
-<h3>Personajes de apoyo</h3>
+<h3>Personajes más populares de Free Fire</h3>
 <p>
-Los personajes de apoyo benefician tanto al jugador como a su equipo.
-Sus habilidades ayudan a curar aliados, mejorar habilidades o dar ventajas tácticas.
-Son esenciales en partidas en escuadra y juego en equipo.
-Un buen apoyo puede decidir el resultado de una partida.
+Algunos personajes se han vuelto muy populares dentro de la comunidad debido a su efectividad y facilidad de uso. Estos personajes suelen aparecer con frecuencia tanto en partidas casuales como en el ámbito competitivo.
+</p>
+<p>
+La popularidad de un personaje puede cambiar con el tiempo, ya que Garena realiza ajustes y balanceos periódicos que afectan directamente al meta del juego.
+</p>
+<p>
+Mantenerse informado sobre estos cambios es clave para seguir siendo competitivo.
 </p>
 
 <h3>Combinación de habilidades</h3>
 <p>
-Free Fire permite combinar varias habilidades para crear configuraciones personalizadas.
-La clave está en equilibrar ataque, defensa y movilidad.
-Probar distintas combinaciones ayuda a encontrar el estilo ideal.
-Los jugadores profesionales ajustan sus habilidades según el modo de juego.
+Free Fire permite combinar habilidades de distintos personajes, lo que abre la puerta a configuraciones personalizadas. Estas combinaciones pueden potenciar fortalezas y cubrir debilidades del jugador.
 </p>
-
-<h3>¿Cuál es el mejor personaje?</h3>
 <p>
-No existe un personaje perfecto para todos.
-El mejor personaje depende del estilo de juego y la experiencia del jugador.
-Lo más recomendable es probar varios y mejorar sus habilidades.
-La práctica constante es la clave del éxito.
+Experimentar con distintas combinaciones es una de las mejores formas de mejorar el rendimiento en partidas clasificatorias.
+</p>
+<p>
+Este sistema añade profundidad estratégica al juego.
 </p>
 
-</section>
-
+<h3>Cómo desbloquear personajes</h3>
+<p>
+Los personajes pueden desbloquearse usando oro, diamantes o mediante eventos especiales. Algunos personajes exclusivos solo están disponibles por tiempo limitado, lo que los hace especialmente valiosos.
+</p>
+<p>
+Administrar correctamente los recursos es fundamental para progresar sin gastar de más.
+</p>
+<p>
+Elegir bien qué personajes mejorar puede marcar una gran diferencia a largo plazo.
+</p>
+</main>
+  
 <footer>
   <p>
     <a href="privacidad.html">Política de privacidad</a> |
