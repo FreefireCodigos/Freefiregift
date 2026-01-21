@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<!-- ===== HEAD ===== -->
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Política de Privacidad | Free Fire Fans</title>
 
+<meta charset="UTF-8">
+<title>Free Fire Fans</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ESTILOS ORIGINALES DEL INDEX (SOLO HEADER Y FOOTER) -->
 <style>
-/* ===== HEADER ===== */
+:root{
+  --primary:#facc15;
+  --dark:#020617;
+  --gray:#111827;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+/* ===== HEADER (COPIADO DEL INDEX) ===== */
 header{
   position:sticky;
   top:0;
@@ -19,60 +30,54 @@ header{
   align-items:center;
   z-index:1000;
 }
-
-.logo{
-  color:#facc15;
-  text-decoration:none;
-  font-weight:bold;
-  font-size:22px;
+header h1{
+  color:var(--primary);
+  margin:0;
+  cursor:pointer;
 }
-
-nav a{
+nav button{
+  background:none;
+  border:none;
   color:#fff;
-  text-decoration:none;
   margin-left:12px;
+  cursor:pointer;
 }
+nav button:hover{color:var(--primary)}
 
-nav a:hover{
-  color:#facc15;
-}
-
-/* ===== FOOTER ===== */
+/* ===== FOOTER (COPIADO DEL INDEX) ===== */
 footer{
-  margin-top:60px;
   background:#000;
-  padding:30px;
+  padding:40px;
   text-align:center;
   color:#9ca3af;
 }
-
 footer a{
   color:#9ca3af;
   text-decoration:none;
   margin:0 8px;
 }
-
-footer a:hover{
-  color:#facc15;
-}
+footer a:hover{color:#facc15}
 </style>
-</head>
 
-<!-- ===== BODY ===== -->
+</head>
 <body>
 
-<!-- ===== HEADER ===== -->
+<!-- ===== HEADER EXACTO DEL INDEX ===== -->
 <header>
-  <a href="index.html" class="logo">FREE FIRE FANS</a>
-
+  <h1 onclick="window.location.href='index.html'">FREE FIRE FANS</h1>
   <nav>
-    <a href="freefire.html">Free Fire</a>
-    <a href="roblox.html">Roblox</a>
-    <a href="fc.html">FC</a>
-    <a href="anime.html">Anime</a>
+    <button onclick="window.location.href='index.html#freefire'">Free Fire</button>
+    <button onclick="window.location.href='index.html#roblox'">Roblox</button>
+    <button onclick="window.location.href='index.html#fc'">FC</button>
+    <button onclick="window.location.href='index.html#anime'">Anime</button>
   </nav>
 </header>
 
+<!-- ===== CONTENIDO (TU TEXTO, CON SU PROPIO ESTILO) ===== -->
+<!-- AQUÍ PEGAS TU PRIVACIDAD / CONTACTO / TÉRMINOS -->
+<!-- NO LE CAMBIO COLORES NI ESTILO -->
+
+<div>
 <!-- ===== CONTENIDO (CON SU PROPIO STYLE) ===== -->
 
 <style>
@@ -128,10 +133,11 @@ word-break: break-word !important;
         font-family: Arial ;
       }
     </style>
-    </div>
+</div>
 
-<!-- ===== FOOTER ===== -->
+<!-- ===== FOOTER EXACTO DEL INDEX ===== -->
 <footer>
+  <hr>
   <p>
     <a href="privacidad.html">Política de privacidad</a> |
     <a href="terminos.html">Términos y condiciones</a> |
@@ -140,6 +146,7 @@ word-break: break-word !important;
   <p>
     Este sitio no está afiliado ni patrocinado por Garena.
   </p>
+  <p>© 2026 Free Fire Fans</p>
 </footer>
 
 </body>
