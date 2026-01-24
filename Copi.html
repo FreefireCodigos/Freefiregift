@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
 <meta charset="UTF-8">
-<title>FreeBux</title>
+<title>TITULO DE LA PAGINA</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ESTILOS ORIGINALES DEL INDEX (SOLO HEADER Y FOOTER) -->
 <style>
-:root{
-  --primary:#facc15;
-  --dark:#020617;
-  --gray:#111827;
-}
-*{box-sizing:border-box}
+/* ===== CONFIGURACION BASE ===== */
 body{
   margin:0;
   font-family:Arial,Helvetica,sans-serif;
+  background:#e5e7eb;
+  color:#111;
+  line-height:1.9;
 }
 
-/* ===== HEADER (COPIADO DEL INDEX) ===== */
+/* ===== HEADER (MISMO DEL INDEX) ===== */
 header{
   position:sticky;
   top:0;
@@ -31,69 +27,115 @@ header{
   z-index:1000;
 }
 header h1{
-  color:var(--primary);
+  color:#facc15;
   margin:0;
   cursor:pointer;
 }
-nav button{
-  background:none;
-  border:none;
+nav a{
   color:#fff;
-  margin-left:12px;
-  cursor:pointer;
-}
-nav button:hover{color:var(--primary)}
-
-/* ===== FOOTER (COPIADO DEL INDEX) ===== */
-footer{
-  background:#000;
-  padding:40px;
-  text-align:center;
-  color:#9ca3af;
-}
-footer a{
-  color:#9ca3af;
   text-decoration:none;
-  margin:0 8px;
+  margin-left:14px;
 }
-footer a:hover{color:#facc15}
-</style>
+nav a:hover{
+  color:#facc15;
+}
 
+/* ===== CONTENEDOR BLANCO ===== */
+main{
+  max-width:1000px;
+  margin:40px auto;
+  background:#fff;
+  padding:70px 35px;
+  border-radius:10px;
+}
+
+/* ===== TITULO PRINCIPAL MULTICOLOR ===== */
+.titulo-principal{
+  font-size:52px;
+  text-align:center;
+  margin-bottom:35px;
+  animation: arcoiris 6s infinite linear;
+}
+
+/* ===== SUBTITULOS MULTICOLOR ===== */
+.subtitulo{
+  font-size:24px;
+  margin-top:45px;
+  margin-bottom:12px;
+  animation: colores 5s infinite linear;
+}
+
+/* ===== TEXTO NORMAL ===== */
+p{
+  margin-bottom:18px;
+  text-align:justify;
+}
+
+/* ===== LISTAS ===== */
+ul{
+  margin-left:20px;
+}
+li{
+  margin-bottom:12px;
+}
+
+/* ===== ANIMACIONES ===== */
+@keyframes arcoiris{
+  0%{color:#ef4444}
+  20%{color:#f59e0b}
+  40%{color:#22c55e}
+  60%{color:#3b82f6}
+  80%{color:#a855f7}
+  100%{color:#ef4444}
+}
+
+@keyframes colores{
+  0%{color:#2563eb}
+  25%{color:#16a34a}
+  50%{color:#dc2626}
+  75%{color:#9333ea}
+  100%{color:#2563eb}
+}
+</style>
 </head>
+
 <body>
 
-<!-- ===== HEADER EXACTO DEL INDEX ===== -->
+<!-- ===== HEADER ===== -->
 <header>
-  <h1 onclick="window.location.href='index.html'">FREE FIRE FANS</h1>
+  <h1 onclick="location.href='index.html'">FREE FIRE FANS</h1>
   <nav>
-    <button onclick="window.location.href='index.html#freefire'">Free Fire</button>
-    <button onclick="window.location.href='index.html#roblox'">Roblox</button>
-    <button onclick="window.location.href='index.html#fc'">FC</button>
-    <button onclick="window.location.href='index.html#anime'">Anime</button>
+    <a href="index.html">Inicio</a>
+    <a href="#">Sección 1</a>
+    <a href="#">Sección 2</a>
   </nav>
 </header>
 
-<!-- ===== CONTENIDO (TU TEXTO, CON SU PROPIO ESTILO) ===== -->
-<!-- AQUÍ PEGAS TU PRIVACIDAD / CONTACTO / TÉRMINOS -->
-<!-- NO LE CAMBIO COLORES NI ESTILO -->
+<!-- ===== CONTENIDO ===== -->
+<main>
 
-<div>
-  <!-- PEGA AQUÍ TU CONTENIDO TAL CUAL -->
-</div>
+  <!-- TITULO PRINCIPAL -->
+  <h2 class="titulo-principal">TITULO PRINCIPAL AQUI</h2>
 
-<!-- ===== FOOTER EXACTO DEL INDEX ===== -->
-<footer>
-  <hr>
+  <!-- BLOQUE 1 -->
+  <h3 class="subtitulo">SUBTITULO 1</h3>
   <p>
-    <a href="privacidad.html">Política de privacidad</a> |
-    <a href="cookies.html">Cookies</a> |
-    <a href="terminos.html">Términos y condiciones</a> |
-    <a href="contacto.html">Contacto</a>
+    CONTENIDO AQUI
   </p>
+
+  <!-- BLOQUE 2 -->
+  <h3 class="subtitulo">SUBTITULO 2</h3>
   <p>
-    Este sitio no está afiliado ni patrocinado por Garena.
+    CONTENIDO AQUI
   </p>
-  <p>© 2026 FreeBux</p>
-</footer>
+
+  <!-- BLOQUE 3 -->
+  <h3 class="subtitulo">SUBTITULO 3</h3>
+  <p>
+    CONTENIDO AQUI
+  </p>
+
+</main>
+
 </body>
 </html>
