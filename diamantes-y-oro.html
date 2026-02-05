@@ -2,20 +2,28 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>TITULO DE LA PAGINA</title>
+<title>Mapas de Roblox | Free Fire Fans</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-/* ===== CONFIGURACION BASE ===== */
+:root{
+  --primary:#facc15;
+  --dark:#020617;
+}
+
+/* ===== RESET ===== */
+*{box-sizing:border-box}
+
+/* ===== BODY BLANCO ===== */
 body{
   margin:0;
   font-family:Arial,Helvetica,sans-serif;
-  background:#e5e7eb;
-  color:#111;
-  line-height:1.9;
+  background:#fff;
+  color:#000;
+  line-height:1.7;
 }
 
-/* ===== HEADER (MISMO DEL INDEX) ===== */
+/* ===== HEADER (IGUAL AL INDEX) ===== */
 header{
   position:sticky;
   top:0;
@@ -27,75 +35,63 @@ header{
   z-index:1000;
 }
 header h1{
-  color:#facc15;
+  color:var(--primary);
   margin:0;
   cursor:pointer;
 }
-nav a{
+nav button{
+  background:none;
+  border:none;
   color:#fff;
-  text-decoration:none;
-  margin-left:14px;
+  margin-left:12px;
+  cursor:pointer;
+  font-size:16px;
 }
-nav a:hover{
-  color:#facc15;
-}
+nav button:hover{color:var(--primary)}
 
-/* ===== CONTENEDOR BLANCO ===== */
+/* ===== CONTENIDO ===== */
 main{
   max-width:1000px;
-  margin:40px auto;
-  background:#fff;
-  padding:70px 35px;
-  border-radius:10px;
+  margin:auto;
+  padding:40px 20px;
 }
 
-/* ===== TITULO PRINCIPAL MULTICOLOR ===== */
-.titulo-principal{
-  font-size:52px;
-  text-align:center;
-  margin-bottom:35px;
-  animation: arcoiris 6s infinite linear;
+h2{
+  font-size:32px;
+  animation: colorChange 6s infinite alternate;
 }
 
-/* ===== SUBTITULOS MULTICOLOR ===== */
-.subtitulo{
-  font-size:24px;
-  margin-top:45px;
-  margin-bottom:12px;
-  animation: colores 5s infinite linear;
+/* SUBTÍTULOS ANIMADOS */
+h3{
+  font-size:22px;
+  margin-top:40px;
+  animation: colorChange 4s infinite alternate;
 }
 
-/* ===== TEXTO NORMAL ===== */
+@keyframes colorChange{
+  0%{color:#facc15;}
+  50%{color:#22c55e;}
+  100%{color:#3b82f6;}
+}
+
 p{
+  font-size:16px;
   margin-bottom:18px;
-  text-align:justify;
 }
 
-/* ===== LISTAS ===== */
-ul{
-  margin-left:20px;
+/* ===== FOOTER ===== */
+footer{
+  background:#000;
+  padding:40px;
+  text-align:center;
+  color:#9ca3af;
 }
-li{
-  margin-bottom:12px;
+footer a{
+  color:#9ca3af;
+  text-decoration:none;
+  margin:0 8px;
 }
-
-/* ===== ANIMACIONES ===== */
-@keyframes arcoiris{
-  0%{color:#ef4444}
-  20%{color:#f59e0b}
-  40%{color:#22c55e}
-  60%{color:#3b82f6}
-  80%{color:#a855f7}
-  100%{color:#ef4444}
-}
-
-@keyframes colores{
-  0%{color:#2563eb}
-  25%{color:#16a34a}
-  50%{color:#dc2626}
-  75%{color:#9333ea}
-  100%{color:#2563eb}
-}
+footer a:hover{color:#facc15}
 </style>
 </head>
 
@@ -103,39 +99,15 @@ li{
 
 <!-- ===== HEADER ===== -->
 <header>
-  <h1 onclick="location.href='index.html'">FREE FIRE FANS</h1>
+  <h1 onclick="window.location.href='index.html'">FREE FIRE FANS</h1>
   <nav>
-    <a href="index.html">Inicio</a>
-    <a href="#">Sección 1</a>
-    <a href="#">Sección 2</a>
+    <button onclick="window.location.href='index.html'">Inicio</button>
+    <button onclick="window.location.href='armas-evolutivas.html'">Armas Evo</button>
+    <button onclick="window.location.href='mapas-roblox.html'">Roblox</button>
   </nav>
 </header>
-
-<!-- ===== CONTENIDO ===== -->
 <main>
-
-  <!-- TITULO PRINCIPAL -->
-  <h2 class="titulo-principal">TITULO PRINCIPAL AQUI</h2>
-
-  <!-- BLOQUE 1 -->
-  <h3 class="subtitulo">SUBTITULO 1</h3>
-  <p>
-    CONTENIDO AQUI
-  </p>
-
-  <!-- BLOQUE 2 -->
-  <h3 class="subtitulo">SUBTITULO 2</h3>
-  <p>
-    CONTENIDO AQUI
-  </p>
-
-  <!-- BLOQUE 3 -->
-  <h3 class="subtitulo">SUBTITULO 3</h3>
-  <p>
-<!-- ================== DIAMANTES Y ORO EN FREE FIRE ================== -->
-
-<h1 class="titulo-principal">
-  Diamantes y Oro en Free Fire: Guía completa para aprovecharlos al máximo
+<h2>Diamantes y Oro en Free Fire:Tutorial para conseguir gratis</h2>
 </h1>
 
 <p>
@@ -150,11 +122,7 @@ pérdida de oportunidades y frustración. En esta guía aprenderás cómo usar a
 con consejos reales y estrategias prácticas.
 </p>
 
-<!-- ================== DIAMANTES ================== -->
-
-<h2 class="titulo-principal">
-  Diamantes en Free Fire
-</h2>
+<h2>Diamantes en Free Fire</h2>
 
 <p>
 Los diamantes son la moneda premium de Free Fire. Con ellos se accede a contenido exclusivo como personajes especiales,
@@ -166,13 +134,13 @@ Debido a su valor, los diamantes deben considerarse una inversión estratégica 
 Un mal uso puede hacer que desaparezcan rápidamente sin aportar mejoras reales a la cuenta.
 </p>
 
-<h3 class="subtitulo">¿Para qué sirven los diamantes?</h3>
+<h3>¿Para qué sirven los diamantes?</h3>
 <p>
 Los diamantes permiten desbloquear personajes con habilidades únicas, participar en ruletas mágicas, adquirir cajas premium
 y acceder a eventos especiales. También se utilizan para mejorar armas evolutivas y obtener objetos cosméticos raros.
 </p>
 
-<h3 class="subtitulo">Formas seguras de conseguir diamantes</h3>
+<h3>Formas seguras de conseguir diamantes</h3>
 <p>
 La única forma segura de obtener diamantes es mediante compras oficiales dentro del juego o plataformas autorizadas por Garena.
 Además, existen eventos de recarga donde el jugador recibe recompensas adicionales por comprar diamantes.
@@ -183,7 +151,7 @@ Garena también ofrece diamantes en eventos especiales, aniversarios del juego y
 obtenerlos sin necesidad de gastar dinero real.
 </p>
 
-<h3 class="subtitulo">Trucos para gastar diamantes con inteligencia</h3>
+<h3>Trucos para gastar diamantes con inteligencia</h3>
 <p>
 Un truco clave es esperar eventos grandes antes de gastar diamantes. En estos eventos, el costo por recompensa suele ser menor
 y las probabilidades de obtener objetos valiosos aumentan.
@@ -194,18 +162,13 @@ Otra estrategia es priorizar personajes y habilidades que influyan directamente 
 puramente estéticas.
 </p>
 
-<h3 class="subtitulo">Errores comunes al usar diamantes</h3>
+<h3>Errores comunes al usar diamantes</h3>
 <p>
 Uno de los errores más comunes es gastar diamantes en cajas aleatorias sin garantía. También es un error caer en páginas externas
 que prometen diamantes gratis, ya que muchas son estafas que pueden terminar en robo de cuentas.
 </p>
 
-<!-- ================== ORO ================== -->
-
-<h2 class="titulo-principal">
-  Oro en Free Fire
-</h2>
-
+<h2>Oro en Free Fire</h2>
 <p>
 El oro es la moneda básica del juego y se obtiene jugando partidas, completando misiones diarias y participando en eventos.
 Aunque no es premium como los diamantes, es esencial para el progreso de cualquier jugador.
@@ -215,37 +178,51 @@ Aunque no es premium como los diamantes, es esencial para el progreso de cualqui
 Bien administrado, el oro permite desbloquear personajes, mejorar habilidades y avanzar sin necesidad de gastar dinero real.
 </p>
 
-<h3 class="subtitulo">¿Para qué sirve el oro?</h3>
+<h3>¿Para qué sirve el oro?</h3>
 <p>
 El oro se utiliza para comprar personajes básicos, mejorar habilidades, adquirir armas dentro de las partidas y desbloquear
 ciertos objetos de la tienda. Es la base del progreso para jugadores free-to-play.
 </p>
 
-<h3 class="subtitulo">Cómo conseguir oro más rápido</h3>
+<h3>Cómo conseguir oro más rápido</h3>
 <p>
 Las partidas clasificatorias, las misiones diarias y los eventos temporales son las mejores fuentes de oro.
 Jugar en escuadra y completar desafíos semanales aumenta considerablemente las ganancias.
 </p>
 
-<h3 class="subtitulo">Trucos para administrar mejor el oro</h3>
+<h3>Trucos para administrar mejor el oro</h3>
 <p>
 Un buen truco es guardar oro para desbloquear personajes importantes en lugar de gastarlo constantemente en armas temporales.
 Invertir en habilidades permanentes siempre ofrece mejores resultados a largo plazo.
 </p>
 
-<h3 class="subtitulo">Errores comunes con el oro</h3>
+<h3>Errores comunes con el oro</h3>
 <p>
 Gastar oro impulsivamente en armas dentro de las partidas es uno de los errores más comunes. Estas compras no aportan progreso
 real y pueden retrasar la mejora de la cuenta.
 </p>
 
-<h3 class="subtitulo">Diferencias entre oro y diamantes</h3>
+<h3>Diferencias entre oro y diamantes</h3>
 <p>
 Mientras los diamantes ofrecen acceso a contenido exclusivo y limitado, el oro permite avanzar de forma constante.
 Usar ambos de manera estratégica es la clave para una cuenta equilibrada y competitiva.
 </p>
 
 </main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <hr>
+  <p>
+    <a href="privacidad.html">Política de privacidad</a> |
+    <a href="terminos.html">Términos y condiciones</a> |
+    <a href="cookies.html">Política de cookies</a> |
+    <a href="contacto.html">Contacto</a>
+  </p>
+  <p>
+    © 2026 FreeBux <br>
+    Todos los derechos reservados.
+</footer>
 
 </body>
 </html>
