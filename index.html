@@ -245,5 +245,21 @@ footer a:hover{color:#facc15}
     © 2026 FreeBux · Este sitio no está afiliado ni patrocinado por Garena ni Roblox.
   </p>
 </footer>
+     <script>
+function toggleMenu() {
+  const menu = document.getElementById("menuDropdown");
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+
+document.addEventListener("click", function(e) {
+  const menu = document.getElementById("menuDropdown");
+  const button = document.querySelector(".menu-btn");
+
+  if (!menu.contains(e.target) && !button.contains(e.target)) {
+    menu.style.display = "none";
+  }
+});
+</script>
+
 </body>
 </html>
