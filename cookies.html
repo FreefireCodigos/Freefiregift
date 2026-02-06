@@ -57,20 +57,36 @@ footer a{
   margin:0 8px;
 }
 footer a:hover{color:#facc15}
+  <!-- ===== HEADER ===== -->
+<header>
+  <h1 onclick="location.href='index.html'">FREE FIRE FANS</h1>
+  <nav class="menu-container">
+  <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+
+  <div class="menu-dropdown" id="menuDropdown">
+    <a href="index.html">Inicio</a>
+    <a href="pagi-roblox.html">Roblox</a>
+    <a href="pagi-free.html">Free Fire</a>
+</nav>
+
+</header>
 </style>
 
 </head>
 <body>
 
-<!-- ===== HEADER EXACTO DEL INDEX ===== -->
+<!-- ===== HEADER ===== -->
 <header>
-  <h1 onclick="window.location.href='index.html'">FREE FIRE FANS</h1>
-  <nav>
-    <button onclick="window.location.href='index.html#freefire'">Free Fire</button>
-    <button onclick="window.location.href='index.html#roblox'">Roblox</button>
-    <button onclick="window.location.href='index.html#fc'">FC</button>
-    <button onclick="window.location.href='index.html#anime'">Anime</button>
-  </nav>
+  <h1 onclick="location.href='index.html'">FREE FIRE FANS</h1>
+  <nav class="menu-container">
+  <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+
+  <div class="menu-dropdown" id="menuDropdown">
+    <a href="index.html">Inicio</a>
+    <a href="pagi-roblox.html">Roblox</a>
+    <a href="pagi-free.html">Free Fire</a>
+</nav>
+
 </header>
 
 <!-- ===== CONTENIDO (TU TEXTO, CON SU PROPIO ESTILO) ===== -->
@@ -134,18 +150,33 @@ word-break: break-word !important;
       </div>
 
 </div>
+<!-- ===== FOOTER ===== -->
 <footer>
   <hr>
   <p>
     <a href="privacidad.html">Política de privacidad</a> |
-    <a href="cookies.html">Cookies</a> |
     <a href="terminos.html">Términos y condiciones</a> |
+    <a href="cookies.html">Política de cookies</a> |
     <a href="contacto.html">Contacto</a>
   </p>
   <p>
-    Este sitio no está afiliado ni patrocinado por Garena.
-  </p>
-  <p>© 2026 Freebux</p>
+    © 2026 FreeBux <br>
+    Todos los derechos reservados.
 </footer>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("menuDropdown");
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+
+document.addEventListener("click", function(e) {
+  const menu = document.getElementById("menuDropdown");
+  const button = document.querySelector(".menu-btn");
+
+  if (!menu.contains(e.target) && !button.contains(e.target)) {
+    menu.style.display = "none";
+  }
+});
+</script>
 </body>
 </html>
