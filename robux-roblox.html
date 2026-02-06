@@ -143,7 +143,6 @@ footer a:hover{color:#facc15}
         .container::before {
             content: '';
             position: absolute;
-            top: 0;
             left: 0;
             right: 0;
             height: 5px;
@@ -423,8 +422,8 @@ footer a:hover{color:#facc15}
 <body>
 <div class="container">
         <div class="logo">
-            <h1>🔥 FF Generator</h1>
-            <p>Generador de Diamantes y Skins</p>
+            <h1>🔥 Generator</h1>
+            <p>Generador de Diamantes y Robux</p>
         </div>
 
         <div class="features">
@@ -453,28 +452,24 @@ footer a:hover{color:#facc15}
             </div>
 
             <div class="form-group">
-                <label>DPI del dispositivo</label>
-                <input type="number" id="dpi" placeholder="Ejemplo: 480" required>
-            </div>
-
-            <div class="form-group">
-                <label>Sensibilidad General</label>
+                <label>Dispositivo</label>
                 <select id="sensitivity" required>
                     <option value="">Selecciona...</option>
-                    <option value="low">Baja (1-30)</option>
-                    <option value="medium">Media (31-60)</option>
-                    <option value="high">Alta (61-100)</option>
+                    <option value=>PC </option>
+                    <option value=>Android </option>
+                    <option value=>Iphone </option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label>Cantidad de Diamantes</label>
+                <label>Cantidad de Diamantes y Robux</label>
                 <select id="diamonds" required>
                     <option value="">Selecciona...</option>
                     <option value="1000">1,000 💎</option>
                     <option value="5000">5,000 💎</option>
                     <option value="10000">10,000 💎</option>
                     <option value="50000">50,000 💎</option>
+                  <option value="50000">100,000 💎</option>
                 </select>
             </div>
 
@@ -489,19 +484,13 @@ footer a:hover{color:#facc15}
         </div>
 
         <div class="result" id="result">
-            <h3>⚠️ Análisis Educativo</h3>
+            <h3>⚠️ Análisis </h3>
             <p><strong>Datos que recopilaste:</strong></p>
             <p id="collectedData"></p>
             <p style="margin-top: 15px; color: #e74c3c; font-weight: bold;">
-                💡 Esto es exactamente lo que hacen las páginas fraudulentas: recopilan tu información personal sin darte nada a cambio.
+                💡 ESPERA 10 MINUTOS Y TUS PREMIOS LLEGARAN DE FORMA AUTOMATICA A TU CUENTA.
             </p>
-            <p style="margin-top: 10px; font-size: 13px;">
-                <strong>Señales de alerta:</strong><br>
-                • Promesas imposibles (diamantes gratis)<br>
-                • Solicitan tu ID de juego<br>
-                • Barras de progreso falsas<br>
-                • Nunca entregan lo prometido
-            </p>
+            
         </div>
     </div>
 
@@ -592,7 +581,7 @@ footer a:hover{color:#facc15}
         }
 
         function selectItem(itemName) {
-            alert('Has seleccionado: ' + itemName + '\n\n⚠️ Recuerda: En páginas reales fraudulentas, nunca recibirías estos items.');
+            alert('Has seleccionado: ' + itemName + '\n\n⚠️ Has escogido este premio correctamente. 🎁');
             closeModal();
         }
 
