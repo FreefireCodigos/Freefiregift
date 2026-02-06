@@ -84,6 +84,51 @@ footer{
 }
 footer a{color:#9ca3af;text-decoration:none;margin:0 8px}
 footer a:hover{color:#facc15}
+     .menu-container {
+  position: relative;
+}
+
+.menu-btn {
+  background: none;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 8px 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.menu-btn:hover {
+  background: var(--primary);
+  color: #000;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 48px;
+  right: 0;
+  background: #020617;
+  border-radius: 10px;
+  min-width: 220px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.6);
+  overflow: hidden;
+  z-index: 2000;
+}
+
+.menu-dropdown a {
+  display: block;
+  padding: 14px 18px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #111827;
+}
+
+.menu-dropdown a:hover {
+  background: var(--primary);
+  color: #000;
+}
+
 </style>
 </head>
 
@@ -91,15 +136,15 @@ footer a:hover{color:#facc15}
 
 <header>
   <h1 onclick="location.href='index.html'">FREE FIRE FANS</h1>
-  <nav>
-    <button onclick="location.href='armas-evolutivas.html'">Armas Evolutivas</button>
-    <button onclick="location.href='personajes-free-fire.html'">Personajes FF</button>
-    <button onclick="location.href='ropa-free-fire.html'">Ropa FF</button>
-    <button onclick="location.href='diamantes-y-oro.html'">Diamantes y Oro</button>
-    <button onclick="location.href='mapas-free-fire.html'">Mapas FF</button>
-    <button onclick="location.href='robux-roblox.html'">Robux</button>
-    <button onclick="location.href='mapas-roblox.html'">Mapas Roblox</button>
-  </nav>
+  <nav class="menu-container">
+  <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+
+  <div class="menu-dropdown" id="menuDropdown">
+    <a href="index.html">Inicio</a>
+    <a href="pagi-roblox.html">Roblox</a>
+    <a href="pagi-free.html">Free Fire</a>
+</nav>
+
 </header>
 
 <div class="hero">
