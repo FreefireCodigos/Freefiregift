@@ -6,6 +6,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+ .layout{
+  display:grid;
+  grid-template-columns: 320px 1fr;
+  gap:40px;
+  align-items:start;
+}
+
+/* Responsive (móvil) */
+@media (max-width:900px){
+  .layout{
+    grid-template-columns:1fr;
+  }
+}
+
  /* ===== CALENDARIO INTERACTIVO ===== */
 .calendar-grid{
   display:grid;
