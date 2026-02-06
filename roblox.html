@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mapas de Roblox | Free Fire Fans</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --primary:#facc15;
+  --dark:#020617;
+}
+
+/* ===== RESET ===== */
+*{box-sizing:border-box}
+
+/* ===== BODY BLANCO ===== */
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#fff;
+  color:#000;
+  line-height:1.7;
+}
+
+/* ===== HEADER (IGUAL AL INDEX) ===== */
+header{
+  position:sticky;
+  top:0;
+  background:#000;
+  padding:16px 24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+}
+header h1{
+  color:var(--primary);
+  margin:0;
+  cursor:pointer;
+}
+nav button{
+  background:none;
+  border:none;
+  color:#fff;
+  margin-left:12px;
+  cursor:pointer;
+  font-size:16px;
+}
+nav button:hover{color:var(--primary)}
+
+/* ===== CONTENIDO ===== */
+main{
+  max-width:1000px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+h2{
+  font-size:32px;
+  animation: colorChange 6s infinite alternate;
+}
+
+/* SUBTÍTULOS ANIMADOS */
+h3{
+  font-size:22px;
+  margin-top:40px;
+  animation: colorChange 4s infinite alternate;
+}
+
+@keyframes colorChange{
+  0%{color:#facc15;}
+  50%{color:#22c55e;}
+  100%{color:#3b82f6;}
+}
+
+p{
+  font-size:16px;
+  margin-bottom:18px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#000;
+  padding:40px;
+  text-align:center;
+  color:#9ca3af;
+}
+footer a{
+  color:#9ca3af;
+  text-decoration:none;
+  margin:0 8px;
+}
+footer a:hover{color:#facc15}
+</style>
+</head>
+
+<body>
+<main>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generador de Diamantes y Skins para Free Fire">
+    <meta name="keywords" content="free fire, diamantes, skins, generador">
+    <title>Generador Free Fire - Diamantes y Skins Gratis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb, #ff6b6b);
+            background-size: 200% 100%;
+            animation: gradient 3s linear infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 200% 0%; }
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo h1 {
+            color: #667eea;
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        .logo p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .progress-container {
+            display: none;
+            margin-top: 30px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 30px;
+            background: #e0e0e0;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            width: 0%;
+            transition: width 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .status {
+            margin-top: 15px;
+            text-align: center;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .result {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .result h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .result p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .feature-clickable {
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .feature-clickable:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+            background: linear-gradient(135deg, #667eea15, #764ba215);
+        }
+
+        .feature-icon {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .feature-text {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+            animation: slideIn 0.3s;
+        }
+
+        @keyframes slideIn {
+            from { 
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to { 
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 20px;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+
+        .item-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .item-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .item-card:hover {
+            transform: scale(1.05);
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .item-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .item-image {
+            width: 100%;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        .item-name {
+            font-weight: bold;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .item-rarity {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .rarity-legendary { color: #ff6b6b; }
+        .rarity-epic { color: #a29bfe; }
+        .rarity-rare { color: #74b9ff; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>🔥 FF Generator</h1>
+            <p>Generador de Diamantes y Skins</p>
+        </div>
+
+        <div class="features">
+            <div class="feature feature-clickable" onclick="showModal('diamonds')">
+                <div class="feature-icon">💎</div>
+                <div class="feature-text">Diamantes Ilimitados</div>
+            </div>
+            <div class="feature feature-clickable" onclick="showModal('skins')">
+                <div class="feature-icon">👕</div>
+                <div class="feature-text">Skins Gratis</div>
+            </div>
+            <div class="feature feature-clickable" onclick="showModal('weapons')">
+                <div class="feature-icon">🎯</div>
+                <div class="feature-text">Armas Gratis</div>
+            </div>
+            <div class="feature feature-clickable" onclick="showModal('vehicles')">
+                <div class="feature-icon">⚡</div>
+                <div class="feature-text">Vehículos</div>
+            </div>
+        </div>
+
+        <form id="generatorForm">
+            <div class="form-group">
+                <label>ID de Free Fire</label>
+                <input type="text" id="playerId" placeholder="Ingresa tu ID" required>
+            </div>
+
+            <div class="form-group">
+                <label>DPI del dispositivo</label>
+                <input type="number" id="dpi" placeholder="Ejemplo: 480" required>
+            </div>
+
+            <div class="form-group">
+                <label>Sensibilidad General</label>
+                <select id="sensitivity" required>
+                    <option value="">Selecciona...</option>
+                    <option value="low">Baja (1-30)</option>
+                    <option value="medium">Media (31-60)</option>
+                    <option value="high">Alta (61-100)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Cantidad de Diamantes</label>
+                <select id="diamonds" required>
+                    <option value="">Selecciona...</option>
+                    <option value="1000">1,000 💎</option>
+                    <option value="5000">5,000 💎</option>
+                    <option value="10000">10,000 💎</option>
+                    <option value="50000">50,000 💎</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn">GENERAR AHORA</button>
+        </form>
+
+        <div class="progress-container" id="progressContainer">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill">0%</div>
+            </div>
+            <div class="status" id="status">Iniciando...</div>
+        </div>
+
+        <div class="result" id="result">
+            <h3>⚠️ Análisis Educativo</h3>
+            <p><strong>Datos que recopilaste:</strong></p>
+            <p id="collectedData"></p>
+            <p style="margin-top: 15px; color: #e74c3c; font-weight: bold;">
+                💡 Esto es exactamente lo que hacen las páginas fraudulentas: recopilan tu información personal sin darte nada a cambio.
+            </p>
+            <p style="margin-top: 10px; font-size: 13px;">
+                <strong>Señales de alerta:</strong><br>
+                • Promesas imposibles (diamantes gratis)<br>
+                • Solicitan tu ID de juego<br>
+                • Barras de progreso falsas<br>
+                • Nunca entregan lo prometido
+            </p>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script>
+        const itemsData = {
+            diamonds: [
+                { name: '100 Diamantes', image: '', icon: '💎', rarity: 'common' },
+                { name: '500 Diamantes', image: '', icon: '💎💎', rarity: 'rare' },
+                { name: '1000 Diamantes', image: '', icon: '💎💎💎', rarity: 'epic' },
+                { name: '5000 Diamantes', image: '', icon: '💎💎💎💎', rarity: 'legendary' },
+                { name: '10000 Diamantes', image: '', icon: '💎💎💎💎💎', rarity: 'legendary' }
+            ],
+            skins: [
+                { name: 'Bunny Warrior', image: '', icon: '🐰', rarity: 'legendary' },
+                { name: 'Criminal Bunny', image: '', icon: '👯', rarity: 'legendary' },
+                { name: 'Alok', image: '', icon: '🎧', rarity: 'legendary' },
+                { name: 'Skyler', image: '', icon: '👸', rarity: 'epic' },
+                { name: 'Shirou', image: '', icon: '🥷', rarity: 'epic' },
+                { name: 'Chrono', image: '', icon: '⏰', rarity: 'legendary' },
+                { name: 'K', image: '', icon: '🎤', rarity: 'epic' },
+                { name: 'Hayato', image: '', icon: '⚔️', rarity: 'rare' }
+            ],
+            weapons: [
+                { name: 'M1014 Megalodon', image: '', icon: '🔫', rarity: 'legendary' },
+                { name: 'AK Dragon', image: '', icon: '🐉', rarity: 'legendary' },
+                { name: 'AWM Duke', image: '', icon: '🎯', rarity: 'epic' },
+                { name: 'MP40 Shirou', image: '', icon: '⚡', rarity: 'epic' },
+                { name: 'SCAR Megalodon', image: '', icon: '🦈', rarity: 'legendary' },
+                { name: 'M4A1 Golden', image: '', icon: '✨', rarity: 'rare' },
+                { name: 'Katana Blood', image: '', icon: '⚔️', rarity: 'legendary' },
+                { name: 'Desert Eagle', image: '', icon: '🔥', rarity: 'epic' }
+            ],
+            vehicles: [
+                { name: 'Monster Truck', image: '', icon: '🚗', rarity: 'legendary' },
+                { name: 'Lamborghini', image: '', icon: '🏎️', rarity: 'legendary' },
+                { name: 'Moto Dragón', image: '', icon: '🏍️', rarity: 'epic' },
+                { name: 'Surfboard Oro', image: '', icon: '🏄', rarity: 'legendary' },
+                { name: 'Skateboard', image: '', icon: '🛹', rarity: 'rare' },
+                { name: 'Jet Ski', image: '', icon: '🚤', rarity: 'epic' }
+            ]
+        };
+
+        function showModal(category) {
+            const modal = document.getElementById('modal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalBody = document.getElementById('modalBody');
+
+            const titles = {
+                diamonds: '💎 Diamantes Disponibles',
+                skins: '👕 Skins de Personajes',
+                weapons: '🎯 Skins de Armas',
+                vehicles: '⚡ Vehículos Premium'
+            };
+
+            modalTitle.textContent = titles[category];
+
+            let html = '<div class="item-grid">';
+            itemsData[category].forEach(item => {
+                const displayContent = item.image ? 
+                    `<img src="${item.image}" alt="${item.name}" class="item-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                     <div class="item-icon" style="display:none;">${item.icon}</div>` :
+                    `<div class="item-icon">${item.icon}</div>`;
+                
+                html += `
+                    <div class="item-card" onclick="selectItem('${item.name}')">
+                        ${displayContent}
+                        <div class="item-name">${item.name}</div>
+                        <div class="item-rarity rarity-${item.rarity}">${item.rarity.toUpperCase()}</div>
+                    </div>
+                `;
+            });
+            html += '</div>';
+
+            modalBody.innerHTML = html;
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        function selectItem(itemName) {
+            alert('Has seleccionado: ' + itemName + '\n\n⚠️ Recuerda: En páginas reales fraudulentas, nunca recibirías estos items.');
+            closeModal();
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('modal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        const form = document.getElementById('generatorForm');
+        const progressContainer = document.getElementById('progressContainer');
+        const progressFill = document.getElementById('progressFill');
+        const status = document.getElementById('status');
+        const result = document.getElementById('result');
+        const collectedData = document.getElementById('collectedData');
+
+        const steps = [
+            'Conectando al servidor...',
+            'Verificando ID de jugador...',
+            'Analizando DPI del dispositivo...',
+            'Optimizando sensibilidad...',
+            'Generando diamantes...',
+            'Procesando solicitud...',
+            'Finalizando...'
+        ];
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const playerId = document.getElementById('playerId').value;
+            const dpi = document.getElementById('dpi').value;
+            const sensitivity = document.getElementById('sensitivity').value;
+            const diamonds = document.getElementById('diamonds').value;
+
+            form.style.display = 'none';
+            progressContainer.style.display = 'block';
+
+            let progress = 0;
+            let stepIndex = 0;
+
+            const interval = setInterval(() => {
+                progress += Math.random() * 15 + 5;
+                
+                if (progress > 100) progress = 100;
+                
+                progressFill.style.width = progress + '%';
+                progressFill.textContent = Math.floor(progress) + '%';
+                
+                if (stepIndex < steps.length) {
+                    status.textContent = steps[stepIndex];
+                    stepIndex++;
+                }
+
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    
+                    setTimeout(() => {
+                        progressContainer.style.display = 'none';
+                        result.style.display = 'block';
+                        
+                        collectedData.innerHTML = `
+                            • ID de jugador: ${playerId}<br>
+                            • DPI: ${dpi}<br>
+                            • Sensibilidad: ${sensitivity}<br>
+                            • Diamantes solicitados: ${diamonds}
+                        `;
+                    }, 500);
+                }
+            }, 400);
+        });
+    </script>
+</body>
+</html>
+</main>
+<!-- ===== HEADER ===== -->
+<header>
+  <h1 onclick="window.location.href='index.html'">FREE FIRE FANS</h1>
+  <nav>
+    <button onclick="window.location.href='index.html'">Inicio</button>
+    <button onclick="window.location.href='armas-evolutivas.html'">Armas Evo</button>
+    <button onclick="window.location.href='mapas-roblox.html'">Roblox</button>
+  </nav>
+</header>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <hr>
+  <p>
+    <a href="privacidad.html">Política de privacidad</a> |
+    <a href="terminos.html">Términos y condiciones</a> |
+    <a href="cookies.html">Política de cookies</a> |
+    <a href="contacto.html">Contacto</a>
+  </p>
+  <p>
+    © 2026 FreeBux <br>
+    Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
